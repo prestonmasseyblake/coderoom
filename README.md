@@ -522,4 +522,4 @@ Future deployment:
 Kubernetes-based distributed architecture
 ```
 
-![Screenshot]("resources\ChatGPT Image May 7, 2026, 10_46_11 PM.png")
+![Description]("resources\ChatGPT Image May 7, 2026, 10_46_11 PM.png")
