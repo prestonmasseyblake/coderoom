@@ -1,4 +1,4 @@
-![Description]("resources/system_design.png")
+![Screenshot]("resources/system_design.png")
 
 # CodeRoom — Real-Time Collaborative Coding Platform
 
