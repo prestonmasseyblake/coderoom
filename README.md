@@ -1,3 +1,5 @@
+![Description]("resources/system_design.png")
+
 # CodeRoom — Real-Time Collaborative Coding Platform
 
 ## Overview
@@ -521,5 +523,3 @@ Future deployment:
 ```text
 Kubernetes-based distributed architecture
 ```
-
-![Description]("resources\ChatGPT Image May 7, 2026, 10_46_11 PM.png")
