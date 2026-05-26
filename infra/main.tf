@@ -37,7 +37,7 @@ data "aws_ami" "amazon_linux_arm" {
 
 resource "aws_instance" "coderroomserver" {
   ami           = data.aws_ami.amazon_linux_arm.id
-  instance_type = "t4g.nano"
+  instance_type = "t4g.micro" # smallest Free Tier-eligible arm64 type (t4g.nano is NOT eligible)
 
   tags = {
     Name = "terraform-ec2"
@@ -112,7 +112,7 @@ resource "aws_db_instance" "free_tier" {
 
   vpc_security_group_ids = [aws_security_group.db_sg.id]
 
-  backup_retention_period = 7
+  backup_retention_period = 1 # Free Tier caps retention; 1 day keeps automated backups + PITR
   skip_final_snapshot     = true  # set false for real workloads
   deletion_protection     = false # set true for real workloads
 
