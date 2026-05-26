@@ -23,11 +23,13 @@ env/
 
 # Terraform
 infra/.terraform/
-infra/terraform.tfstate
-infra/terraform.tfstate.backup
-infra/.terraform.lock.hcl
+# State now lives in S3 (remote backend); ignore any local copies/backups
+*.tfstate
+*.tfstate.*
 *.tfvars
 *.tfvars.json
+# NOTE: .terraform.lock.hcl is intentionally committed so collaborators
+# use identical provider versions. Do not ignore it.
 
 # macOS
 .DS_Store
