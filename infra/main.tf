@@ -124,3 +124,4 @@ resource "aws_db_instance" "free_tier" {
 output "db_endpoint" {
   value = aws_db_instance.free_tier.endpoint
 }
+
